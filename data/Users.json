@@ -1,0 +1,154 @@
+[
+    {
+        "id": 1,
+        "FacebookUserName": "JohnSmith",
+        "TwitterUserName": "@JohnSmith",
+        "InstaUserName": "John_Smith_Official",
+        "YoutubeUserName": "JohnSmithTube",
+        "Facebook": {
+            "Followers": 5054,
+            "PageViews": 21230,
+            "Likes": 1053
+        },
+        "Twitter": {
+            "Followers": 3740,
+            "Retweets": 2120,
+            "Likes": 8550
+        },
+        "Instagram": {
+            "Followers": 45000,
+            "ProfileViews":1268,
+            "Likes": 16484
+        },
+        "Youtube": {
+            "Subscribers": 1560,
+            "TotalViews": 48724,
+            "Likes": 53475
+        }
+    },
+    {
+        "id": 2,
+        "FacebookUserName": "EmmaJohnson",
+        "TwitterUserName": "@EmmaJohnson",
+        "InstaUserName": "Emma_J_Official",
+        "YoutubeUserName": "EmmaJohnsonTube",
+        "Facebook": {
+            "Followers": 35000,
+            "PageViews": 15374,
+            "Likes": 8587,
+            "upRate":73
+        },
+        "Twitter": {
+            "Followers": 22480,
+            "Retweets": 1200,
+            "Likes": 5000,
+            "upRate":42
+        },
+        "Instagram": {
+            "Followers": 50000,
+            "ProfileViews": 394354,
+            "Likes": 10000,
+            "upRate":87
+        },
+        "Youtube": {
+            "Subscribers": 80000,
+            "TotalViews": 352570,
+            "Likes": 12000,
+            "upRate":57
+        }
+    },
+    {
+        "id": 3,
+        "FacebookUserName": "SophiaDavis",
+        "TwitterUserName": "@SophiaDavis",
+        "InstaUserName": "Sophia_Davis_Official",
+        "YoutubeUserName": "SophiaDavisTube",
+        "Facebook": {
+            "Followers": 45000,
+            "PageViews": 180245,
+            "Likes": 9000,
+            "upRate":99
+        },
+        "Twitter": {
+            "Followers": 25027,
+            "Retweets": 1500,
+            "Likes": 7000,
+            "upRate":18
+        },
+        "Instagram": {
+            "Followers": 70000,
+            "ProfileViews": 407450,
+            "Likes": 12000,
+            "upRate":11
+        },
+        "Youtube": {
+            "Subscribers": 90000,
+            "TotalViews": 4504800,
+            "Likes": 18000,
+            "upRate":25
+        }
+    },
+    {
+        "id": 4,
+        "FacebookUserName": "Ahmed Mohamed",
+        "TwitterUserName": "@AhmedMohamed",
+        "InstaUserName": "Ahmed_Mohamed#15",
+        "YoutubeUserName": "JustSmash",
+        "Facebook": {
+            "Followers": 150354,
+            "PageViews": 700000,
+            "Likes": 3000,
+            "upRate":99
+        },
+        "Twitter": {
+            "Followers": 8000,
+            "Retweets": 500,
+            "Likes": 2000,
+            "upRate":98
+        },
+        "Instagram": {
+            "Followers": 25000,
+            "ProfileViews": 120000,
+            "Likes": 3500,
+            "upRate":88
+        },
+        "Youtube": {
+            "Subscribers": 70000,
+            "TotalViews": 1505700,
+            "Likes": 8587,
+            "upRate":15
+        }
+    },
+    {
+        "id": 5,
+        "FacebookUserName": "EthanMiller",
+        "TwitterUserName": "@EthanMiller",
+        "InstaUserName": "Ethan_M_Official",
+        "YoutubeUserName": "EthanMillerTube",
+        "Facebook": {
+            "Followers": 31390,
+            "PageViews": 125350,
+            "Likes": 6057,
+            "upRate":22
+        },
+        "Twitter": {
+            "Followers": 182790,
+            "Retweets": 1000,
+            "Likes": 4028,
+            "upRate":9
+            
+        },
+        "Instagram": {
+            "Followers": 45000,
+            "ProfileViews": 250000,
+            "Likes": 80871,
+            "upRate":13
+        },
+        "Youtube": {
+            "Subscribers": 70000,
+            "TotalViews": 3000000,
+            "Likes": 10000,
+            "upRate":79
+        }
+    }
+]

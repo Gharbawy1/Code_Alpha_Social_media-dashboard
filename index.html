@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="dark-theme" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social media Dashboard</title>
+    <!-- BootStarp files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Coustom Css Styling -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- site Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+
+</head>
+
+<body>
+    <div class="social-board">
+        <div class="container">
+            <div class="row social-board__header align-items-center">
+                <div class="col-sm-6">
+                    <div class="header__text">
+                        <h1 class="h2">Social Media Dashboard</h1>
+                        <p>Total Followers: 23.004</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="header__toggler text-right">
+                        <p>Dark Mode</p>
+                        <div class="toggler-btn"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- followers cards start -->
+        
+            <div class="row social-board__tl-flrs text-center">
+                <div class="col-sm-6 col-lg-3  mb-4 "><!-- Card - ( total follower card ) ( facebook card ) -->
+                    <div class="card tl-flrs__card tl-flrs__card--facebook text-center" id = "cardContainerface">
+                        <h2 class="card__heading card__heading--title" id = "UserNameFacebook"></h2>
+                        <div class="card__increment inc"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 mb-4"><!-- Card - ( total follower card ) ( twitter card ) -->
+                    <div class="card tl-flrs__card tl-flrs__card--twitter text-center" id = "cardContainertw">
+                        <h2 class="card__heading card__heading--title" id = "UsernameTwitter"></h2>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4"><!-- Card - ( total follower card ) ( instagram card ) -->
+                    <div class="card tl-flrs__card tl-flrs__card--instagram text-center" id = "cardContainerinsta">
+                        <h2 class="card__heading card__heading--title" id = "UsernameInsta"></h2>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4"><!-- Card - ( total follower card ) ( youtube card ) -->
+                    <div class="card tl-flrs__card tl-flrs__card--youtube text-center mx-1" id = "cardContaineryoutb">
+                        <h2 class="card__heading card__heading--title" id = "UsernameYoutube"></h2>
+                    </div>
+                </div>
+            </div>
+            <!-- followers cards start -->
+
+
+            <!-- overviwes cards start -->
+            <div class="row social-board__td-count">
+                <div class="col-12">
+                    <h2 class="h2 social-board__td-count--title">Overview Today</h2>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4" ><!-- Card - ( Overview today ) ( facebook card ) -->
+                    <div class="card td-count__card td-count__card--facebook mx-1">
+                        <div class="card__title">
+                            <h2 class="card__heading">Page Views</h2><img src="imgs/icon-facebook.svg"
+                                alt="facebook-icon">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__body" id = "face-ovr-vw-p"></div>
+                            <div class="card__increment inc"><img src="imgs/icon-up.svg" alt="icon-up">3%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4"><!-- Card - ( Overview today ) ( facebook card ) -->
+                    <div class="card td-count__card td-count__card--facebook mx-1">
+                        <div class="card__title">
+                            <h2 class="card__heading">Likes</h2><img src="imgs/icon-facebook.svg" alt="facebook-icon">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__body" id = "face-ovr-vw-l"></div>
+                            <div class="card__increment dec"><img src="imgs/icon-down.svg" alt="icon-up">2%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-3 mb-4"><!-- Card - ( Overview today ) ( instagram card ) -->
+                    <div class="card td-count__card td-count__card--instagram mx-1">
+                        <div class="card__title">
+                            <h2 class="card__heading">Likes</h2><img src="imgs/icon-instagram.svg" alt="instagram-icon">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__body" id = "insta-ovr-vw-l">5462</div>
+                            <div class="card__increment inc"><img src="imgs/icon-up.svg" alt="icon-up">2257%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4"><!-- Card - ( Overview today ) ( instagram card ) -->
+                    <div class="card td-count__card td-count__card--instagram mx-1">
+                        <div class="card__title">
+                            <h2 class="card__heading">Profile Views</h2><img src="imgs/icon-instagram.svg"
+                                alt="instagram-icon">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__body" id = "insta-ovr-vw">52K</div>
+                            <div class="card__increment inc"><img src="imgs/icon-up.svg" alt="icon-up">1375%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12"></div>
+                <div class="col-sm-6 col-lg-3 mb-4"><!-- Card - ( Overview today ) ( twitter card ) -->
+                    <div class="card td-count__card td-count__card--twitter mx-1">
+                        <div class="card__title">
+                            <h2 class="card__heading">Retweets</h2><img src="imgs/icon-twitter.svg" alt="twitter-icon">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__body" id = "twitter-ovr-vw-ret">117</div>
+                            <div class="card__increment inc"><img src="imgs/icon-up.svg" alt="icon-up">30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4"><!-- Card - ( Overview today ) ( twitter card ) -->
+                    <div class="card td-count__card td-count__card--twitter mx-1">
+                        <div class="card__title">
+                            <h2 class="card__heading">Likes</h2><img src="imgs/icon-twitter.svg" alt="twitter-icon">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__body" id = "twitter-ovr-vw-l">507</div>
+                            <div class="card__increment inc"><img src="imgs/icon-up.svg" alt="icon-up">553%</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-6 col-lg-3 mb-4"><!-- Card - ( Overview today ) ( youtube card ) -->
+                    <div class="card td-count__card td-count__card--youtube mx-1">
+                        <div class="card__title">
+                            <h2 class="card__heading">Likes</h2><img src="imgs/icon-youtube.svg" alt="youtube-icon">
+                        </div>
+
+                        <div class="card__content">
+                            <div class="card__body" id = "youtb-ovr-vw-l">107</div>
+                            <div class="card__increment dec"><img src="imgs/icon-down.svg" alt="icon-up">19%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4"><!-- Card - ( Overview today ) ( youtube card ) -->
+                    <div class="card td-count__card td-count__card--youtube mx-1">
+                        <div class="card__title">
+                            <h2 class="card__heading" >Total Views</h2><img src="imgs/icon-youtube.svg"
+                                alt="youtube-icon">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__body" id = "youtb-ovr-vw-tot-v"></div>
+                            <div class="card__increment dec"><img src="imgs/icon-down.svg" alt="icon-up">12%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start Javascripts Files -->
+    <!-- slim jquery-->
+    
+    <!-- popper js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js file -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js style file -->
+    <script src="js/main.js"></script>
+    <!-- livereload pug server -->
+    <!-- End Javascripts Files -->
+
+
+</body>
+
+</html>

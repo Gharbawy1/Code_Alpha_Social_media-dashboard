@@ -1,0 +1,309 @@
+// Dark Theme ( The Default Theme )
+:root.dark-theme {
+    // ### Primary
+    --Lime-Green: hsl(163, 72%, 41%);
+    --Bright-Red: hsl(356, 69%, 56%);
+
+    // Social colors
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --YouTube: hsl(348, 97%, 39%);
+
+    // Toggler Dark theme Gradient Background
+    --Toggler: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    // Dark Theme
+    --bkg: hsl(230, 17%, 14%);
+    --Top-bkg-Ptrn: hsl(232, 19%, 15%);
+    --card-bkg: hsl(228, 28%, 20%);
+    --card-bkg-hover: hsl(228, 28%, 25%);
+    --text-blue: hsl(228, 34%, 66%);
+    --text-white: hsl(0, 0%, 100%);
+
+    // Toggler Light Theme grey background
+    --Toggle-lit: hsl(230, 22%, 74%);
+}
+
+// Light Theme 
+:root.light-theme {
+    // ### Primary
+    --Lime-Green: hsl(163, 72%, 41%);
+    --Bright-Red: hsl(356, 69%, 56%);
+
+    // Social colors
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --YouTube: hsl(348, 97%, 39%);
+
+    // Toggler Gradient
+    --Toggler: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    // Dark Theme
+    --bkg: hsl(0, 0%, 100%);
+    --Top-bkg-Ptrn: hsl(225, 100%, 98%);
+    --card-bkg: hsl(227, 47%, 96%);
+    --card-bkg-hover: hsl(223, 64%, 98%);
+    --text-blue: hsl(228, 12%, 44%);
+    --text-white: hsl(230, 17%, 14%);
+
+    // Toggler Light Theme
+    --Toggle-lit: hsl(230, 22%, 74%);
+
+    .toggler-btn {
+        background-image: none !important;
+    }
+}
+
+// Body Styles
+body {
+    background: linear-gradient(to bottom, var(--Top-bkg-Ptrn) 30%,var(--bkg) 0%);
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+// header
+.social-board__header {
+    min-height: 120px;
+    .header__text {
+        h1 {
+            color: var(--text-white);
+        }
+        p {
+            color: var(--text-blue);
+        }
+    }
+    .header__toggler {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        p {
+            color: var(--text-white);
+            font-weight: bold;
+            margin: 0px 10px 3px 0;
+        }
+        .toggler-btn {
+            background-color: var(--Toggle-lit);
+            background-image: var(--Toggler);
+            border-radius: 10px;
+            cursor: pointer;
+            width: 35px;
+            height: 20px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: var(--bkg);
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                top: 2px;
+                left: 3px;
+                transition: all .3s ease-in-out;
+            }
+            &.active {
+                background-image: none;
+                &::before {
+                    left: 17px;
+                }
+            }
+        }
+    }
+}
+
+// Social Board
+.social-board {
+    padding-bottom: 25px;
+    h2.social-board__td-count--title {
+        color: var(--text-white);
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    // Main Card Styles
+    .card {
+        background-color: var(--card-bkg);
+        font-size: 14px;
+        padding: 1.5rem;
+        transition: all ease-in-out .2s;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--card-bkg-hover);
+        }
+        .card__heading {
+            font-size: 14px;
+            color: var(--text-blue);
+        }
+        .card__body {
+            color: var(--text-white);
+            font-weight: bold;
+        }
+        .card__increment {
+            font-weight: bold;
+            img {
+                margin-right: 5px;
+            }
+            &.inc {
+                color: var(--Lime-Green);
+            }
+            &.dec {
+                color: var(--Bright-Red);
+            }
+        }
+        // Total Followers Card Styles
+        &.tl-flrs__card {
+            &.tl-flrs__card--facebook {
+                border-top: 3px solid var(--Facebook);
+            }
+            &.tl-flrs__card--twitter {
+                border-top: 3px solid var(--Twitter);
+            }
+            &.tl-flrs__card--instagram {
+                position: relative;
+                overflow: hidden;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-image: var(--Instagram);
+                    width: 100%;
+                    height: 3px;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            &.tl-flrs__card--youtube {
+                border-top: 3px solid var(--YouTube);
+            }
+            .card__heading {
+                img {
+                    margin-right: 10px;
+                    padding-bottom: 3px;
+                }
+            }
+            .card__body {
+                color: var(--text-white);
+                font-size: 3rem;
+                margin-top: 2px;
+                margin-bottom: 20px;
+                span {
+                    color: var(--text-blue);
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 100;
+                    letter-spacing: 3px;
+                    margin-top: -8px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        // Overview Card Styles
+        &.td-count__card {
+            .card__title, 
+            .card__content {
+                display: flex;
+                justify-content: space-between;
+            }
+            .card__title {
+                img {
+                    height: 20px;
+                }
+            }
+            .card__content {
+                align-items: center;
+                margin-top: 10px;
+                .card__body {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+// Mobile Screen Styles
+@media (max-width: 573px){
+    .social-board__header {
+        .header__text {
+            border-bottom: 1px solid var(--card-bkg);
+            padding: 30px 0 10px;
+        }
+        .header__toggler {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0 40px;
+        }
+    }
+}
+
+// Color scheme Themes ( user os style level )
+@media (prefers-color-scheme: light) { 
+    // if user os style is light
+    :root.light-theme {
+        // ### Primary
+        --Lime-Green: hsl(163, 72%, 41%);
+        --Bright-Red: hsl(356, 69%, 56%);
+
+        // Social colors
+        --Facebook: hsl(208, 92%, 53%);
+        --Twitter: hsl(203, 89%, 53%);
+        --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+        --YouTube: hsl(348, 97%, 39%);
+
+        // Toggler Gradient
+        --Toggler: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+        // Dark Theme
+        --bkg: hsl(0, 0%, 100%);
+        --Top-bkg-Ptrn: hsl(225, 100%, 98%);
+        --card-bkg: hsl(227, 47%, 96%);
+        --card-bkg-hover: hsl(223, 64%, 98%);
+        --text-blue: hsl(228, 12%, 44%);
+        --text-white: hsl(230, 17%, 14%);
+
+        // Toggler Light Theme
+        --Toggle-lit: hsl(230, 22%, 74%);
+
+        .toggler-btn {
+            background-image: none !important;
+        }
+    }
+    // if user os style is dark
+    .root.dark-theme {
+        // ### Primary
+        --Lime-Green: hsl(163, 72%, 41%);
+        --Bright-Red: hsl(356, 69%, 56%);
+
+        // Social colors
+        --Facebook: hsl(208, 92%, 53%);
+        --Twitter: hsl(203, 89%, 53%);
+        --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+        --YouTube: hsl(348, 97%, 39%);
+
+        // Toggler Dark theme Gradient Background
+        --Toggler: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+        // Dark Theme
+        --bkg: hsl(230, 17%, 14%);
+        --Top-bkg-Ptrn: hsl(232, 19%, 15%);
+        --card-bkg: hsl(228, 28%, 20%);
+        --card-bkg-hover: hsl(228, 28%, 25%);
+        --text-blue: hsl(228, 34%, 66%);
+        --text-white: hsl(0, 0%, 100%);
+
+        // Toggler Light Theme grey background
+        --Toggle-lit: hsl(230, 22%, 74%);
+
+        .toggler-btn {
+            background-image: var(--Toggler) !important;
+        }
+    }   
+}
+
+footer {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    padding: 3px 0;
+}
